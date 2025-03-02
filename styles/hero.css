@@ -1,0 +1,59 @@
+.hero-site{
+    height: 98vh;/*Essa seção vai tomar 98% da minha viewport height*/
+    background-image: url(../images/bg-inicio-site.jpg);/*imagem de fundo da sessão inicial*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: white;/*deixando todo texto da sessão hero branco*/ 
+}
+
+.hero-site .interface{
+    display: flex;/*Para conseguir utilizar a propriedade align-itens*/
+    align-items: center;/*alinhando os itens da interface verticalmente*/
+    height: 100%;/*determinando que a minha interface vai ter sempre 100% da altura*/
+
+}
+
+.hero-site .interface .txt-hero h1{
+    font-size: 4em;
+    font-weight: 200;/*deixando o texto descubra um mais leve*/
+    line-height: 70px;/*altura entre linha*/
+}
+
+.hero-site .interface .txt-hero h1 span{
+    display: block; /*para jogar o texto dentro da tag span para a linha seguinte*/
+    font-weight: 800;/*deixando o texto novo mundo mais pesado*/
+}
+
+.hero-site .interface .txt-hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;/*afastamento em cima e em baixo do h1 e do botão*/
+}
+
+.hero-site .interface .txt-hero p span{
+    display: block; /*para jogar o texto dentro da tag span para a linha seguinte*/
+    
+}
+
+.hero-site .interface .txt-hero button{
+    width: 220px;/*Largura do botão*/
+    height: 60px;/*altura do botão*/
+    font-size: 18px;/*tamanho da letra do botão*/
+    background-color: transparent;/*Cor de fundo do botão*/
+    border: 1px solid white;/*Borda do botão*/
+    color: white;/*cor da letra do botão*/
+    cursor: pointer;
+
+    transition: 0.5s; /*Tempo do hover*/
+}
+
+.hero-site .interface .txt-hero button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+

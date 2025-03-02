@@ -1,0 +1,60 @@
+header{
+    width: 100%; /* width do cabeçalho*/
+    padding: 40px 0; /* respiro interno do header*/
+}
+
+header .interface /*TODO ESTILO SERÁ APLICADO APENAS NO .INTERFACE DO HEADER */{
+    display: flex; /* Deixa os itens do cabeçalho na horizontal, um do lado do outro */
+    justify-content: space-between; /* espaçamento entre os itens do cabeçalho */
+    align-items: center; /*fica tudo alinhado no eixo vertical */
+}
+
+header .logo img{
+    max-width: 40px; /* redimensiona o tamanho da logo do cabeçalho */
+}
+
+header .menu-desktop nav ul{
+    list-style: none;
+}
+
+header .menu-desktop nav ul li{
+    display: inline-block; /* Deixa os itens da navigation um do lado do outro*/
+    margin: 0 40px; /*Espaçamento entre os links do navigation*/
+}
+
+header .menu-desktop nav ul li a{
+    text-decoration: none; /*Tira o sublinhado do link*/
+    color: white; /*Cor do texto do link do cabeçalho*/
+
+    display: inline-block;/*para que o link que originalmente é inline-level possa receber a propriedade transform scale*/
+
+    transition: .2s;/*Tempo do transform*/
+}
+
+header .menu-desktop nav ul li a:hover{
+    transform: scale(1.05);/*zoom de quando passa o mouse por cima do link do cabeçalho*/
+}
+
+header .btn-contato button{
+    width: 140px;/*Largura do botão*/
+    height: 50px;/*altura do botão*/
+    font-size: 18px;/*tamanho da letra do botão*/
+    background-color: transparent;/*Cor de fundo do botão*/
+    border: 1px solid white;/*Borda do botão*/
+    color: white;/*cor da letra do botão*/
+    cursor: pointer;
+
+    transition: 0.5s; /*Tempo do hover*/
+}
+
+
+header .btn-contato button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
