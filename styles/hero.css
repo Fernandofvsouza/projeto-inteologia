@@ -11,7 +11,7 @@
 .hero-site .interface{
     display: flex;/*Para conseguir utilizar a propriedade align-itens*/
     align-items: center;/*alinhando os itens da interface verticalmente*/
-    height: 100%;/*determinando que a minha interface vai ter sempre 100% da altura*/
+    height: 100%;/*determinando que a minha interface vai ter sempre 100% da altura disponivel*/
 
 }
 
