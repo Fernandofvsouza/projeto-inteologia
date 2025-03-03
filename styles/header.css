@@ -1,6 +1,9 @@
 header{
     width: 100%; /* width do cabeçalho*/
     padding: 40px 0; /* respiro interno do header*/
+    position: fixed; /*usado para posicionar o elemento header em relação a janela de visualização vw */
+    top: 0; /*Fixa o elemento no topo da tela*/
+    left: 0;/*fixa o elemento no lado esquerdo da tela*/
 }
 
 header .interface /*TODO ESTILO SERÁ APLICADO APENAS NO .INTERFACE DO HEADER */{
