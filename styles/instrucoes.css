@@ -1,0 +1,59 @@
+.como-funciona{
+    padding: 80px 0;
+}
+
+.txt-funciona, .instrucoes{
+    /*Maneira diferente de colocar um item do lado do outro sem ser atraves do display flex*/
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.como-funciona .txt-funciona{
+    /*Para o titulo mover junto com o site*/
+    position: sticky;
+    top: 50%;
+    padding-bottom: 40px; /*Para alinhar no final o como funciona com as caixas ao lado*/
+}
+
+.como-funciona .txt-funciona h3{
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.como-funciona .txt-funciona h3 span{
+    display: block; /*Para colocar o txt do span na linha debaixo*/
+    font-weight: 700;
+}
+
+.instrucoes .instru-box {
+    display: flex;/*Para colocar a imagem ao lado do texto nas caixas*/
+    align-items: center;
+    gap: 20px;
+
+    /*Estilização das caixas*/
+    margin-bottom: 40px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.instrucoes .instru-box img {
+    max-width: 100px; /*Redimensionando o tamanho da imagem*/
+}
+
+.instrucoes .instru-box h4{
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+
+.instrucoes .instru-box h4 span{
+    font-weight: 300;
+}
+
+.instrucoes .instru-box p{
+    line-height: 20px;
+}
