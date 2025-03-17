@@ -1,0 +1,48 @@
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;/*Para colocar todos os itens no centro*/
+    padding: 30px 0;
+}
+
+footer .top-footer button /*Estilização dos botoes de rede social*/{
+    width: 60px; /*Para formar um quadrado perfeito*/
+    height: 60px; /*Para formar um quadrado perfeito*/
+    border-radius: 50%; /*Para arrendodar as bordas*/
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 20px;
+
+    transition: .5s ease-in-out;
+}
+
+footer .top-footer a{
+    text-decoration: none;
+}
+
+footer .top-footer button:hover{
+    background-color: white;
+    color: black;
+}
+
+footer .middle-footer{
+    margin: 20px 0;
+}
+
+footer .middle-footer a {
+    color: white;
+    margin: 0 15px;
+}
+
+footer .bottom-footer{
+    border-top: 2px solid white; /*Criar a linha*/
+    
+}
+
+footer .bottom-footer p{
+    color: white;
+    margin-top: 10px; /*Para dar um espaçamento da linha com o paragrafo de direitos reservados*/
+}
