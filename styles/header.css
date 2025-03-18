@@ -4,6 +4,10 @@ header{
     position: fixed; /*usado para posicionar o elemento header em relação a janela de visualização vw */
     top: 0; /*Fixa o elemento no topo da tela*/
     left: 0;/*fixa o elemento no lado esquerdo da tela*/
+
+    z-index: 99; /*Para a rolagem dinamica estar na frente da seção hospedagem*/
+
+    transition: .5s ease-in-out; /*transição da rolagem dinamica*/ 
 }
 
 header .interface /*TODO ESTILO SERÁ APLICADO APENAS NO .INTERFACE DO HEADER */{
@@ -12,9 +16,52 @@ header .interface /*TODO ESTILO SERÁ APLICADO APENAS NO .INTERFACE DO HEADER */
     align-items: center; /*fica tudo alinhado no eixo vertical */
 }
 
-header .logo img{
+header .logo .logo-branca{
     max-width: 40px; /* redimensiona o tamanho da logo do cabeçalho */
 }
+
+/*Estilo do menu dinamico*/
+header .logo .logo-preta{
+    display: none;
+}
+
+header.rolar{
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.601); /*shadow na box do header na rolagem dinamica*/
+}
+
+header.rolar .menu-desktop nav ul li a{
+    color: black; /*Cor dos links na rolagem dinamica*/
+}
+
+header.rolar .btn-contato button{
+    /*Borda e cor do botão do header na rolagem dinamica, transição do hover na rolagem dinamica tambem*/
+    border: 1px solid black;
+    color: black;
+
+    transition: .5s ease-in-out;
+}
+
+header.rolar .btn-contato button:hover{
+
+    background-color: black;
+    color: white;
+}
+
+header.rolar .logo .logo-branca{
+    /*Para a logo branca desaparecer*/
+    display: none;
+}
+
+header.rolar .logo .logo-preta{
+    /*para a logo preta aparecer e o max-width para diminuir  o tamanho da logo*/ 
+    display: block;
+    max-width: 40px;
+}
+/*----------------------*/
+
+
 
 header .menu-desktop nav ul{
     list-style: none;
