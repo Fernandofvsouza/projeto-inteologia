@@ -16,5 +16,6 @@ body{
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;/*Respiro para nao ficar colado nas laterais*/
     /* CENTRALIZAÇÃO DO CONTEUDO*/
 }
