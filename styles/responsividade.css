@@ -2,6 +2,10 @@
     header .menu-desktop, header .btn-contato{
         display: none;/*Esconder o menu e o botão de contato para criar o menu mobile*/
     }
+
+    header .btn-menu-mob{
+        display: block;/*Para aparecer o menu mobile*/
+    }
 }
 
 @media screen and (max-width: 850px) {

@@ -105,6 +105,105 @@ header .btn-contato button:hover{
 
 
 
+/*Estilo do botão do menu mobile*/
+header .btn-menu-mob{
+    display: none;
+
+    z-index: 99999999; /*Para aparecer o x quando o menu mobile estiver aberto*/
+}
 
 
+header .btn-menu-mob .line-menumob-1{
+    /*Criação da linha 1*/
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    margin: 10px 0;
 
+    transition: .2s ease-in-out;/*Transição de quando clicar no menu mob*/
+}
+
+header .btn-menu-mob .line-menumob-2{
+    /*Criação da linha 2*/
+    width: 20px;
+    background-color: white;
+    height: 3px;
+    margin: 10px 0;
+
+    transition: .2s ease-in-out; /*Transição de quando clicar no menu mob*/
+}
+
+header.rolar .btn-menu-mob div {
+    /*Para quando rolar a pagina e ativar o menu dinamico, o menu mobile mudar para a cor preta*/
+   background-color: black; 
+}
+
+/*Para fazer a transição da barra para o x*/
+header .btn-menu-mob .line-menumob-1.ativo1{
+    transform: rotate(45deg) translate(30%);
+    
+    background-color: white;/*Para quando rolar a pagina o x do menumobile continuar aparecendo*/
+
+}
+
+header .btn-menu-mob .line-menumob-2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;/*Para as duas linhas ter um width igual*/
+
+    background-color: white;/*Para quando rolar a pagina o x do menumobile continuar aparecendo*/
+}
+
+/*Estilo do menu mobile*/
+
+header .menu-mobile{
+    width: 0;
+    height: 0;
+    background-color: black;
+
+    /*Para o menu mobile respeitar a altura de todo o site e não do header*/
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    /*Para colocar os itens no centro da tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow: hidden; /*Para esconder o os links do menu mobile quando nao tiver clicado no menu*/
+    transition: .5s;/*Transição de quando abrir o menu mobile*/
+}
+
+
+header .menu-mobile nav ul{
+    list-style: none;
+}
+
+header .menu-mobile nav a{
+    display: inline-block;/*Para receber a propriedade padding, links naturalmente são inline level e não recebem propriedades como padding*/
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+
+    transition: .5s ease-in-out;
+}
+
+header .menu-mobile nav a:hover{
+    
+    color: orange;
+    text-shadow: 0 0 20px white;
+}
+
+header .menu-mobile.abrir{
+    /*Para mostrar os links quando clicar no menu hamburger*/
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow{
+    /*Para quando o menu-mobile estiver aberto não conseguir rolar a pagina*/
+    overflow: hidden;
+}
